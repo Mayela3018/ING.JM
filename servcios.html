@@ -8,14 +8,20 @@
     <style>
         body {
             font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
         }
 
         .section {
-            padding: 100px 0; /* Reduce el padding para subir el contenido */
+            padding: 100px 0;
             position: relative;
             background: url('https://uchile.cl/.imaging/default/dam/imagenes/Civil/imagenes-postgrado/civil.jpg/jcr:content.jpg') no-repeat center center;
             background-size: cover;
             color: #17daf077;
+            flex: 1; /* Asegura que la sección ocupe todo el espacio disponible */
         }
 
         .services-title {
@@ -24,7 +30,7 @@
             text-align: center;
             margin-bottom: 40px;
             color: #f2f1f6;
-            margin-top: 0; /* Reduce el margen superior para acercarlo al top */
+            margin-top: 0;
             font-weight: 1000;
         }
 
@@ -35,7 +41,7 @@
             overflow: hidden;
             cursor: pointer;
             background-color: #f8f9fa;
-            height: 100%; /* Mantiene todas las tarjetas con la misma altura */
+            height: 100%;
         }
 
         .service-card:hover {
@@ -45,7 +51,7 @@
 
         .service-card img {
             width: 100%;
-            height: 250px; /* Aumenta la altura de las imágenes */
+            height: 250px;
             object-fit: cover;
             transition: transform 0.3s ease-in-out;
         }
@@ -75,7 +81,6 @@
             color: #fff;
             text-align: center;
             padding: 15px 0;
-            position: relative;
             width: 100%;
         }
 
@@ -86,11 +91,11 @@
 
         @media (min-width: 768px) {
             .section {
-                padding: 120px 0; /* Aumenta el padding en pantallas más grandes */
+                padding: 120px 0;
             }
 
             .service-card img {
-                height: 300px; /* Aumenta aún más la altura de las imágenes en pantallas grandes */
+                height: 300px;
             }
         }
     </style>
@@ -141,3 +146,4 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </body>
 </html>
+
