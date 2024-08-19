@@ -11,7 +11,7 @@
         }
 
         .section {
-            padding: 150px 0;
+            padding: 100px 0; /* Reduce el padding para subir el contenido */
             position: relative;
             background: url('https://uchile.cl/.imaging/default/dam/imagenes/Civil/imagenes-postgrado/civil.jpg/jcr:content.jpg') no-repeat center center;
             background-size: cover;
@@ -24,6 +24,8 @@
             text-align: center;
             margin-bottom: 40px;
             color: #f2f1f6;
+            margin-top: 0; /* Reduce el margen superior para acercarlo al top */
+            font-weight: 1000;
         }
 
         .service-card {
@@ -33,7 +35,7 @@
             overflow: hidden;
             cursor: pointer;
             background-color: #f8f9fa;
-            height: 100%; /* Make all cards the same height */
+            height: 100%; /* Mantiene todas las tarjetas con la misma altura */
         }
 
         .service-card:hover {
@@ -43,7 +45,7 @@
 
         .service-card img {
             width: 100%;
-            height: 200px;
+            height: 250px; /* Aumenta la altura de las imágenes */
             object-fit: cover;
             transition: transform 0.3s ease-in-out;
         }
@@ -73,14 +75,23 @@
             color: #fff;
             text-align: center;
             padding: 15px 0;
-            position: absolute;
+            position: relative;
             width: 100%;
-            bottom: 0;
         }
 
         footer p {
             margin: 0;
             font-size: 1rem;
+        }
+
+        @media (min-width: 768px) {
+            .section {
+                padding: 120px 0; /* Aumenta el padding en pantallas más grandes */
+            }
+
+            .service-card img {
+                height: 300px; /* Aumenta aún más la altura de las imágenes en pantallas grandes */
+            }
         }
     </style>
 </head>
